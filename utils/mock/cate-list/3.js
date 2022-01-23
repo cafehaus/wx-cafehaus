@@ -8,7 +8,7 @@ const coffee = [
   { name: '蒙多诺沃', nameEn: 'Mundo Novo' },
   { name: '卡图文', nameEn: 'Catuai' },
   { name: '马拉戈日皮', nameEn: 'Maragogype' },
-  { name: '瑰夏', nameEn: 'GeishaG', alias: 'esha' },
+  { name: '瑰夏', nameEn: 'Geisha', alias: 'Gesha' },
   { name: '怕卡斯', nameEn: 'Pacas' },
   { name: '薇拉·萨尔奇', nameEn: 'Villa Sarchi' },
   { name: '帕卡马拉', nameEn: 'Pacamara' },

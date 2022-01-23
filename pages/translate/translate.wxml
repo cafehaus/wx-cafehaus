@@ -1,0 +1,31 @@
+<view class="page">
+  <view class="bg" />
+
+  <view class="header">
+    <view class="language">
+      <text>{{ from === 'zh_CN' ? '中文' : '英文' }}</text>
+      <text class="iconfont icon-toggle" bindtap="changeLang" />
+      <text>{{ to === 'zh_CN' ? '中文' : '英文' }}</text>
+    </view>
+    <view class="textarea">
+      <textarea
+        model:value="{{txt}}"
+        placeholder="请输入要翻译的内容"
+        placeholder-style="color: #ccc"
+      />
+    </view>
+
+    <view class="action">
+      <text class="btn-reset" bindtap="reset">重置</text>
+      <text class="btn" bindtap="onTranslate">翻译</text>
+    </view>
+  </view>
+
+  <view class="content" hidden="{{!result}}">
+    <view class="subtitle">翻译结果</view>
+    <view class="result">
+      <text class="txt">{{ result }}</text>
+      <text class="iconfont icon-read" bindtap="onSpeak" data-txt="{{result}}" />
+    </view>
+  </view>
+</view>

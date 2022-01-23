@@ -4,7 +4,7 @@
       <view class="name">{{ item.name }}</view>
 
       <view class="info">
-        <view class="english" bindtap="onTranslate" data-info="{{ item }}">
+        <view class="english" bindtap="onSpeak" data-txt="{{ item.nameEn }}">
           <text>{{ item.nameEn }}</text>
           <text class="iconfont icon-read" />
         </view>

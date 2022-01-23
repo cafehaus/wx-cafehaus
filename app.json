@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/cate-list/cate-list",
+    "pages/translate/translate",
     "pages/mine/mine"
   ],
   "window":{
@@ -21,6 +22,12 @@
         "text": "首页",
         "iconPath": "images/tab-index.png",
         "selectedIconPath" :"images/tab-index-on.png"
+      },
+      {
+        "pagePath": "pages/translate/translate",
+        "text": "翻译",
+        "iconPath": "images/tab-translate.png",
+        "selectedIconPath" :"images/tab-translate-on.png"
       },
       {
         "pagePath": "pages/mine/mine",

@@ -1,7 +1,3 @@
-// pages/mine/mine.js
-import CateInfo from '../../utils/mock/cate-list/index.js'
-import Cate from '../../utils/cate.js'
-
 const WechatSI = requirePlugin("WechatSI")
 const Audio = wx.getBackgroundAudioManager()
 
@@ -11,27 +7,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // curId: '',
-    curEng: '',
-    list: []
+    from: 'zh_CN',
+    to: 'en_US',
+    txt: '',
+    result: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(CateInfo)
-    console.log(options)
-    let curId = options.id || ''
-    let list = CateInfo[curId]
-    let pageTitle = Cate.find(m => m.id === curId).title
-    wx.setNavigationBarTitle({
-      title: pageTitle
-    })
-    this.setData({
-      curId,
-      list
-    })
+
   },
 
   /**
@@ -82,17 +68,47 @@ Page({
   onShareAppMessage: function () {
 
   },
-  
+
+  onTranslate() {
+    if (!this.data.txt) {
+      wx.showToast({
+        title: '请输入要翻译的内容',
+        icon: 'none'
+      })
+      return
+    }
+
+    WechatSI.translate({
+      lfrom: this.data.from,
+      lto: this.data.to,
+      content: this.data.txt,
+      tts: true,
+      success: (res) => {
+          if(res.retcode == 0) {
+              this.setData({
+                result: res.result
+              })
+          } else {
+              console.warn("翻译失败", res)
+              wx.showToast({
+                title: '翻译失败',
+                icon: 'none'
+              })
+          }
+      }
+    })
+  },
+
   onSpeak(e) {
     let { txt } = e.currentTarget.dataset
-    if (this.data.curEng === txt) {
+    if (this.data.curTxt === txt) {
       Audio.src = this.data.curAudio
       // Audio.title = this.data.curEng
       return
     }
 
     WechatSI.textToSpeech({
-      lang:"en_US",
+      lang: this.data.to,
       content: txt,
       success: (res) => {
         if(res.retcode == 0) {
@@ -100,11 +116,26 @@ Page({
           Audio.title = txt
 
           // 缓存一下
-          this.data.curEng = txt
+          this.data.curTxt = txt
           this.data.curAudio = res.filename
         }
       }
     })
-  }
+  },
 
+  reset() {
+    this.setData({
+      from: 'zh_CN',
+      to: 'en_US',
+      txt: '',
+      result: ''
+    })
+  },
+
+  changeLang() {
+    this.setData({
+      from: this.data.to,
+      to: this.data.from
+    })
+  }
 })
