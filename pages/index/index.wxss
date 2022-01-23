@@ -1,0 +1,54 @@
+/* pages/mine/mine.wxss */
+.page {
+  padding: 20rpx 30rpx;
+}
+
+.list-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20rpx;
+  grid-column-gap: 20rpx;
+}
+
+.item {
+  padding: 30rpx 10rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  box-shadow: 1px 1px 6px #e1e4fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item .iconfont {
+  font-size: 60rpx;
+  color: #57bc78;
+}
+
+.item .info {
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.item .name {
+  font-size: 30rpx;
+  color: #333;
+  font-weight: 600;
+}
+
+.item .des {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.item .pic{
+  width: 120rpx;
+  height: 160rpx;
+  border-radius: 8rpx;
+}
+
+.ad-box {
+  margin-top: 20rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+}

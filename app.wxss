@@ -1,0 +1,6 @@
+@import "images/iconfont.wxss";
+
+.page {
+  min-height: 100vh;
+  background: #f2f5ff;
+} 

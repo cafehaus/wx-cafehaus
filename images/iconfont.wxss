@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3157824 */
+  src: url('//at.alicdn.com/t/font_3157824_ulple6c73th.woff2?t=1642908818300') format('woff2'),
+       url('//at.alicdn.com/t/font_3157824_ulple6c73th.woff?t=1642908818300') format('woff'),
+       url('//at.alicdn.com/t/font_3157824_ulple6c73th.ttf?t=1642908818300') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-flavor:before {
+  content: "\e7a7";
+}
+
+.icon-roast:before {
+  content: "\e7a6";
+}
+
+.icon-coffee-maker:before {
+  content: "\e7a9";
+}
+
+.icon-grinder:before {
+  content: "\e7aa";
+}
+
+.icon-coffee-aliance:before {
+  content: "\e7ab";
+}
+
+.icon-coffee-area:before {
+  content: "\e7ac";
+}
+
+.icon-coffee-machine:before {
+  content: "\e7ad";
+}
+
+.icon-cate:before {
+  content: "\e7af";
+}
+
+.icon-coffee-bean:before {
+  content: "\e7b0";
+}
+
+.icon-coffee:before {
+  content: "\e7b1";
+}
+
+.icon-coffee-shop:before {
+  content: "\e7b2";
+}
+
+.icon-kind:before {
+  content: "\e7b3";
+}
+
+.icon-read:before {
+  content: "\e699";
+}

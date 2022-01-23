@@ -1,0 +1,28 @@
+const coffee = [
+  { name: '摩卡壶', nameEn: 'Moka Maker' },
+  { name: '法压壶', nameEn: 'French Press' },
+  { name: '爱乐压', nameEn: 'AeroPress' },
+  { name: '蛋糕杯', nameEn: 'Kalita Wave' },
+  { name: '滴滤杯', nameEn: 'Dripper' },
+  { name: '美式滤泡壶', nameEn: 'Chemex' },
+  { name: '虹吸式咖啡壶', nameEn: 'Siphon', alias: 'syphon' },
+  { name: '越南壶', nameEn: 'Vietnamese Pot' },
+  { name: '比利时皇家咖啡壶 / 平衡式塞风壶', nameEn: 'Balancing Syphon' },
+  { name: '土耳其咖啡壶', nameEn: 'Cezve' },
+  { name: '美式滴漏咖啡壶', nameEn: 'Electric Coffee Maker' },
+  { name: '那不勒斯壶', nameEn: 'Napoletana' },
+  { name: '咖啡细口壶', nameEn: 'Swan Neck Kettle' },
+  { name: '咖啡机', nameEn: 'Coffee Machine' },
+  { name: '咖啡壶', nameEn: 'Coffee Pot' },
+  { name: '咖啡机(壶)', nameEn: 'Coffee Maker' },
+  { name: '咖啡磨豆机', nameEn: 'Coffee Grinder' },
+  { name: '滤纸', nameEn: 'Coffee Paper Filter' },
+  { name: '粉层膨胀', nameEn: 'Bloom' },
+  { name: '水粉比例', nameEn: 'Brew Ratio' },
+  { name: '冲煮时间', nameEn: 'Brew Time' },
+  { name: '克丽玛/咖啡油脂', nameEn: 'Crema' },
+  { name: '杯测', nameEn: 'Cupping' },
+  { name: '品尝', nameEn: 'Tasting' },
+]
+
+module.exports = coffee

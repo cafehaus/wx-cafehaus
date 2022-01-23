@@ -1,0 +1,28 @@
+const coffee = [
+  { name: '星巴克', nameEn: 'Starbucks' },
+  { name: '瑞幸咖啡', nameEn: 'Luckin Coffee' },
+  { name: 'Manner咖啡', nameEn: 'Manner Coffee' },
+  { name: 'Seesaw咖啡', nameEn: 'Seesaw Coffee' },
+  { name: '代数学家咖啡', nameEn: 'Algebraist Coffee' },
+  { name: '连咖啡', nameEn: 'Coffee Box' },
+  { name: '蓝瓶咖啡', nameEn: 'Blue Bottle' },
+  { name: '百分号咖啡', nameEn: '% Arabica' },
+  { name: '知识分子咖啡', nameEn: 'Intelligentsia' },
+  { name: '树墩咖啡', nameEn: 'Stumptown' },
+  { name: '反文化咖啡', nameEn: 'Counter Culture' },
+  { name: '雀巢咖啡', nameEn: 'Nestlé' },
+  { name: '麦咖啡', nameEn: 'McCafe' },
+  { name: '太平洋咖啡', nameEn: 'Pacific Coffee' },
+  { name: '咖世家', nameEn: 'Costa' },
+  { name: '漫咖啡', nameEn: 'Maan Coffee' },
+  { name: '动物园咖啡', nameEn: 'Zoo Coffee' },
+  { name: '上岛咖啡', nameEn: 'UBC Coffee' },
+  { name: '雕刻时光咖啡', nameEn: 'Sculpting in Time' },
+  { name: '咖啡店', nameEn: 'Coffee Bar', alias: 'Coffee Shop' },
+  { name: '咖啡角', nameEn: 'Coffee Corner' },
+  { name: '咖啡控', nameEn: 'Coffee Lover' },
+  { name: '咖啡桌', nameEn: 'Coffee Table' },
+  { name: '喝杯咖啡休息一会', nameEn: 'Coffee Break' },
+]
+
+module.exports = coffee

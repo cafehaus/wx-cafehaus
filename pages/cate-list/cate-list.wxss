@@ -1,0 +1,62 @@
+.page {
+  padding: 20rpx 30rpx;
+}
+
+.page .item:not(:last-child) {
+  margin-bottom: 20rpx;
+}
+
+.item {
+  padding: 40rpx 16rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  box-shadow: 1px 1px 6px #e1e4fb;
+}
+
+.item-ad {
+  padding: 0;
+  overflow: hidden;
+}
+
+.item .name {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #453e7b;
+  border-bottom: 1rpx solid #eee;
+  padding: 0 40rpx 20rpx;
+}
+
+.item .info {
+  padding: 20rpx 40rpx 0;
+}
+
+.item .info .english {
+  font-size: 36rpx;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item .info .english .icon-read {
+  font-size: 48rpx;
+  margin-left: 12rpx;
+  color: #bbb;
+}
+
+.item .info .phonetic {
+  font-size: 30rpx;
+  color: #999;
+  margin-top: 2rpx;
+}
+
+.item .info .alias {
+  font-size: 30rpx;
+  color: #999;
+  margin-top: 16rpx;
+}
+
+.item .info .des {
+  font-size: 30rpx;
+  color: #999;
+  margin-top: 16rpx;
+}

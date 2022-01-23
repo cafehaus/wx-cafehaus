@@ -1,0 +1,22 @@
+<view class="page">
+  <block wx:for="{{ list }}" wx:key="index">
+    <view class="item">
+      <view class="name">{{ item.name }}</view>
+
+      <view class="info">
+        <view class="english" bindtap="onTranslate" data-info="{{ item }}">
+          <text>{{ item.nameEn }}</text>
+          <text class="iconfont icon-read" />
+        </view>
+        <view wx:if="{{item.phonetic}}" class="phonetic">音标：{{ item.phonetic }}</view>
+        <view wx:if="{{item.alias}}" class="alias">同义词：{{ item.alias }}</view>
+        <view wx:if="{{item.des}}" class="des">描述：{{ item.des }}</view>
+      </view>
+
+    </view>
+
+    <view class="item item-ad" wx:if="{{index === 2 || (index > 10 && index === list.length - 1)}}">
+      <ad unit-id="adunit-5f8609462bc68236"></ad>
+    </view>
+  </block>
+</view>
