@@ -1,5 +1,6 @@
 const WechatSI = requirePlugin("WechatSI")
 const Audio = wx.getBackgroundAudioManager()
+const Record = WechatSI.getRecordRecognitionManager()
 
 Page({
 
@@ -10,7 +11,8 @@ Page({
     from: 'zh_CN',
     to: 'en_US',
     txt: '',
-    result: ''
+    result: '',
+    recordFile: '',
   },
 
   /**
@@ -121,6 +123,31 @@ Page({
         }
       }
     })
+  },
+
+  onRecord() {
+    Record.start()
+  },
+
+  onRecordStop() {
+    Record.stop()
+    Record.onStop = (res) => {
+      // console.log("record file path", res.tempFilePath)
+      // console.log("result", res.result)
+      let txt = res.result || ''
+      if (!txt) {
+        wx.showToast({
+          title: '未识别到您的语音，请长按重新录音',
+          icon: 'none',
+          duration: 3000,
+        })
+        return
+      }
+      this.setData({
+        txt: res.result
+      })
+      this.onTranslate()
+    }
   },
 
   reset() {

@@ -16,16 +16,27 @@
     </view>
 
     <view class="action">
-      <text class="btn-reset" bindtap="reset">重置</text>
-      <text class="btn" bindtap="onTranslate">翻译</text>
+      <text
+        class="iconfont icon-microphone"
+        bind:touchstart="onRecord"
+        bind:touchend="onRecordStop"
+      />
+      <view>
+        <text class="btn-reset" bindtap="reset">重置</text>
+        <text class="btn" bindtap="onTranslate">文本翻译</text>
+      </view>
     </view>
   </view>
 
   <view class="content" hidden="{{!result}}">
     <view class="subtitle">翻译结果</view>
     <view class="result">
-      <text class="txt">{{ result }}</text>
+      <text class="txt" user-select>{{ result }}</text>
       <text class="iconfont icon-read" bindtap="onSpeak" data-txt="{{result}}" />
     </view>
+  </view>
+
+  <view class="ad-box">
+    <ad unit-id="adunit-5f8609462bc68236"></ad>
   </view>
 </view>

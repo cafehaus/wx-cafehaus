@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3157824 */
-  src: url('//at.alicdn.com/t/font_3157824_9fipzl86j1d.woff2?t=1642928320281') format('woff2'),
-       url('//at.alicdn.com/t/font_3157824_9fipzl86j1d.woff?t=1642928320281') format('woff'),
-       url('//at.alicdn.com/t/font_3157824_9fipzl86j1d.ttf?t=1642928320281') format('truetype');
+  src: url('//at.alicdn.com/t/font_3157824_gera5kcoq8p.woff2?t=1643039322808') format('woff2'),
+       url('//at.alicdn.com/t/font_3157824_gera5kcoq8p.woff?t=1643039322808') format('woff'),
+       url('//at.alicdn.com/t/font_3157824_gera5kcoq8p.ttf?t=1643039322808') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,14 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-microphone:before {
+  content: "\e6a0";
+}
+
+.icon-delete-circle:before {
+  content: "\e6ab";
 }
 
 .icon-playstation:before {

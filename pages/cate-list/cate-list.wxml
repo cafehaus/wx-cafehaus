@@ -4,9 +4,9 @@
       <view class="name">{{ item.name }}</view>
 
       <view class="info">
-        <view class="english" bindtap="onSpeak" data-txt="{{ item.nameEn }}">
-          <text>{{ item.nameEn }}</text>
-          <text class="iconfont icon-read" />
+        <view class="english">
+          <text	user-select>{{ item.nameEn }}</text>
+          <text class="iconfont icon-read" bindtap="onSpeak" data-txt="{{ item.nameEn }}" />
         </view>
         <view wx:if="{{item.phonetic}}" class="phonetic">音标：{{ item.phonetic }}</view>
         <view wx:if="{{item.alias}}" class="alias">同义词：{{ item.alias }}</view>
