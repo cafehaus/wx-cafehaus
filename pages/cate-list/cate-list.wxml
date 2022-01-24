@@ -12,7 +12,6 @@
         <view wx:if="{{item.alias}}" class="alias">同义词：{{ item.alias }}</view>
         <view wx:if="{{item.des}}" class="des">描述：{{ item.des }}</view>
       </view>
-
     </view>
 
     <view class="item item-ad" wx:if="{{index === 2 || (index > 10 && index === list.length - 1)}}">

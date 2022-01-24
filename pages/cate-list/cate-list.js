@@ -1,4 +1,3 @@
-// pages/mine/mine.js
 import CateInfo from '../../utils/mock/cate-list/index.js'
 import Cate from '../../utils/cate.js'
 
@@ -12,7 +11,7 @@ Page({
    */
   data: {
     // curId: '',
-    curEng: '',
+    // curEng: '',
     list: []
   },
 
@@ -20,8 +19,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(CateInfo)
-    console.log(options)
     let curId = options.id || ''
     let list = CateInfo[curId]
     let pageTitle = Cate.find(m => m.id === curId).title
@@ -29,9 +26,9 @@ Page({
       title: pageTitle
     })
     this.setData({
-      curId,
       list
     })
+    this.data.curId = curId
   },
 
   /**

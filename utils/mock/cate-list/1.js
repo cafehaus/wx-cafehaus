@@ -12,6 +12,4 @@ const coffee = [
   { name: '招牌咖啡', nameEn: 'Signature Coffee', phonetic: "[ˈsɪɡnətʃər ˈkɔːfi]" },
 ]
 
-
-
 module.exports = coffee

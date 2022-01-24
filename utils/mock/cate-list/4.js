@@ -1,18 +1,16 @@
 const coffee = [
-  { name: '咖啡带', nameEn: 'Coffee Zone' },
-  { name: '巴西', nameEn: 'Brazil' },
-  { name: '哥伦比亚', nameEn: 'Colombia' },
-  { name: '哥斯达黎加', nameEn: 'Costa Rica' },
-  { name: '埃塞俄比亚', nameEn: 'Ethiopia' },
-  { name: '危地马拉', nameEn: 'Guatemala' },
-  { name: '印度尼西亚', nameEn: 'Indonesia' },
-  { name: '肯尼亚', nameEn: 'Kenya' },
-  { name: '巴拿马', nameEn: 'Panama' },
-  { name: '坦桑尼亚', nameEn: 'Tanzania' },
-  { name: '云南', nameEn: 'Yunnan' },
-  { name: '也门', nameEn: 'Yemen' }
+  { name: '咖啡带', nameEn: 'Coffee Zone', phonetic: "[ˈkɔːfi zoʊn]" },
+  { name: '巴西', nameEn: 'Brazil', phonetic: "[brəˈzɪl]" },
+  { name: '哥伦比亚', nameEn: 'Colombia', phonetic: "[kəˈlʌmbiə]" },
+  { name: '哥斯达黎加', nameEn: 'Costa Rica', phonetic: "[ˈkɔstə ˈrikə]" },
+  { name: '埃塞俄比亚', nameEn: 'Ethiopia', phonetic: "[ˌiθiˈoʊpiə]" },
+  { name: '危地马拉', nameEn: 'Guatemala', phonetic: "[ˌgwɑtəˈmɑlə]" },
+  { name: '印度尼西亚', nameEn: 'Indonesia', phonetic: "[ɪndəˈniːʒə]" },
+  { name: '肯尼亚', nameEn: 'Kenya', phonetic: "[ˈkɛnjə]" },
+  { name: '巴拿马', nameEn: 'Panama', phonetic: "[ˈpænəmɑː]" },
+  { name: '坦桑尼亚', nameEn: 'Tanzania', phonetic: "[ˌtænzəˈniə]" },
+  { name: '云南', nameEn: 'Yunnan', phonetic: "" },
+  { name: '也门', nameEn: 'Yemen', phonetic: "[ˈjɛmən]" }
 ]
-
-
 
 module.exports = coffee

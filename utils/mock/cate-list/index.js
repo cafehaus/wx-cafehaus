@@ -11,9 +11,6 @@ import ten from './10.js'
 import eleven from './11.js'
 import twelve from './12.js'
 
-
-
-
 module.exports = {
   1: one,
   2: two,
