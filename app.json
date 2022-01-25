@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/cate-list/cate-list",
     "pages/translate/translate",
+    "pages/calculate/calculate",
     "pages/mine/mine"
   ],
   "window":{
@@ -28,6 +29,12 @@
         "text": "翻译",
         "iconPath": "images/tab-translate.png",
         "selectedIconPath" :"images/tab-translate-on.png"
+      },
+      {
+        "pagePath": "pages/calculate/calculate",
+        "text": "计算",
+        "iconPath": "images/tab-calculate.png",
+        "selectedIconPath" :"images/tab-calculate-on.png"
       },
       {
         "pagePath": "pages/mine/mine",

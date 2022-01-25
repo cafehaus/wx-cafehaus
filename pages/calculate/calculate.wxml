@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="header">
+    <text class="label">萃取率 RATIO</text>
+    <view class="action">
+      <text class="iconfont icon-reduce-circle" />
+      <input type="digit" model:value="{{ratio}}" />
+      <text class="iconfont icon-add-circle" />
+    </view>
+  </view>
+
+  <view class="item">
+    <text class="label">咖啡 COFFEE</text>
+    <view class="action">
+      <text class="iconfont icon-reduce-circle" />
+      <input type="digit" model:value="{{coffee}}" />
+      <text class="iconfont icon-add-circle" />
+    </view>
+    <text class="unit">克 GRAM</text>
+  </view>
+
+  <view class="item">
+    <text class="label">水 WATER</text>
+    <view class="action">
+      <text class="iconfont icon-reduce-circle" />
+      <input type="digit" model:value="{{water}}" />
+      <text class="iconfont icon-add-circle" />
+    </view>
+    <text class="unit">克 GRAM</text>
+  </view>
+
+  <view class="drink">
+    <view class="info">{{drink}}</view>
+    <text class="label">萃取咖啡液 BREW</text>
+    <text class="unit">克 GRAM</text>
+  </view>
+</view>

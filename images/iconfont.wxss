@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3157824 */
-  src: url('//at.alicdn.com/t/font_3157824_gera5kcoq8p.woff2?t=1643039322808') format('woff2'),
-       url('//at.alicdn.com/t/font_3157824_gera5kcoq8p.woff?t=1643039322808') format('woff'),
-       url('//at.alicdn.com/t/font_3157824_gera5kcoq8p.ttf?t=1643039322808') format('truetype');
+  src: url('//at.alicdn.com/t/font_3157824_rdkuxac0q5.woff2?t=1643130282996') format('woff2'),
+       url('//at.alicdn.com/t/font_3157824_rdkuxac0q5.woff?t=1643130282996') format('woff'),
+       url('//at.alicdn.com/t/font_3157824_rdkuxac0q5.ttf?t=1643130282996') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,18 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-drink:before {
+  content: "\e6c2";
+}
+
+.icon-add-circle:before {
+  content: "\e6aa";
+}
+
+.icon-reduce-circle:before {
+  content: "\e6ac";
 }
 
 .icon-microphone:before {

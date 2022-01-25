@@ -8,7 +8,7 @@ const coffee = [
   { name: '哥伦比亚', nameEn: 'Colombia', phonetic: "[kəˈlʌmbiə]" },
   { name: '曼特宁', nameEn: 'Sumatra Mandheling', phonetic: "[ˌsuˈmɑtrə]" },
   { name: '曼巴咖啡', nameEn: 'Mandeling & Brazilian Coffee', phonetic: "" },
-  { name: '碳烧咖啡', nameEn: 'Charcoal Roasted Coffee', phonetic: "[ˈtʃɑːrkoʊl] ˈroʊstɪd ˈkɔːfi]" },
+  { name: '碳烧咖啡', nameEn: 'Charcoal Roasted Coffee', phonetic: "[ˈtʃɑːrkoʊl ˈroʊstɪd ˈkɔːfi]" },
   { name: '巴西咖啡', nameEn: 'Brazilian Coffee', phonetic: "[brəˈzɪliən ˈkɔːfi]" },
   { name: '哥伦比亚咖啡', nameEn: 'Colombian Coffee', phonetic: "[kəˈlʌmbiən ˈkɔːfi]" },
   { name: '夏威夷可娜咖啡', nameEn: 'Hawaiian Kona Coffee', phonetic: "[həˈwɑjən ˈkoʊnə ˈkɔːfi]" },
