@@ -17,7 +17,9 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">更多功能，敬请期待</text>
+  <view class="tip">
+    <text>更多功能，敬请期待</text>
+    <view>...</view>
+    <button open-type="contact" class="btn-feedback">意见反馈</button>
   </view>
 </view>

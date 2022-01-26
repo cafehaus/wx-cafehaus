@@ -10,7 +10,7 @@
     <view class="textarea">
       <textarea
         model:value="{{txt}}"
-        placeholder="请输入要翻译的内容"
+        placeholder="请输入要翻译的内容或长按录音"
         placeholder-style="color: #ccc"
       />
     </view>

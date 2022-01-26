@@ -34,3 +34,11 @@
     <text class="unit">克 GRAM</text>
   </view>
 </view>
+
+
+<!-- {
+  "pagePath": "pages/calculate/calculate",
+  "text": "计算",
+  "iconPath": "images/tab-calculate.png",
+  "selectedIconPath" :"images/tab-calculate-on.png"
+}, -->

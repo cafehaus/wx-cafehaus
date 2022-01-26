@@ -14,8 +14,14 @@
   border-radius: 50%;
 }
 
-.usermotto {
-  margin-top: 200px;
+.tip {
+  margin-top: 160px;
   text-align: center;
   color: #999;
+}
+
+.btn-feedback {
+  margin-top: 40rpx;
+  border-radius: 40rpx;
+  color: #57bc78;
 }

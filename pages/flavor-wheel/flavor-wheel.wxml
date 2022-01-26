@@ -1,4 +1,10 @@
 <!--index.wxml-->
 <view class="page">
-  <ec-canvas id="mychart-dom-calendar" canvas-id="mychart-calendar" ec="{{ ec }}"></ec-canvas>
+  <view class="action">
+    <text class="btn" bindtap="onChange">切换为{{ type === '1' ? '英文' : '中文' }}版</text>
+  </view>
+
+  <view class="mychart">
+    <ec-canvas id="mychart-dom-calendar" canvas-id="mychart-calendar" ec="{{ ec }}"></ec-canvas>
+  </view>
 </view>

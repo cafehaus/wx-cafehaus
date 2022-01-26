@@ -38,12 +38,6 @@
         "selectedIconPath" :"images/tab-wheel-on.png"
       },
       {
-        "pagePath": "pages/calculate/calculate",
-        "text": "计算",
-        "iconPath": "images/tab-calculate.png",
-        "selectedIconPath" :"images/tab-calculate-on.png"
-      },
-      {
         "pagePath": "pages/mine/mine",
         "text": "我的",
         "iconPath": "images/tab-mine.png",
