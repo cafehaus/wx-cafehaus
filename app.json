@@ -4,6 +4,7 @@
     "pages/cate-list/cate-list",
     "pages/translate/translate",
     "pages/calculate/calculate",
+    "pages/flavor-wheel/flavor-wheel",
     "pages/mine/mine"
   ],
   "window":{
@@ -29,6 +30,12 @@
         "text": "翻译",
         "iconPath": "images/tab-translate.png",
         "selectedIconPath" :"images/tab-translate-on.png"
+      },
+      {
+        "pagePath": "pages/flavor-wheel/flavor-wheel",
+        "text": "风味轮",
+        "iconPath": "images/tab-wheel.png",
+        "selectedIconPath" :"images/tab-wheel-on.png"
       },
       {
         "pagePath": "pages/calculate/calculate",

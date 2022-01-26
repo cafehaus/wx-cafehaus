@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "风味轮",
+  "usingComponents": {
+    "ec-canvas": "../../components/ec-canvas/ec-canvas"
+  }
+}
