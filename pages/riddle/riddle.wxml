@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="action">
+    <text class="btn" bindtap="changeLang">根据{{ lang === 'zh_CN' ? '英文' : '中文' }}猜{{ lang === 'zh_CN' ? '中文' : '英文' }}</text>
+  </view>
+
+  <view class="question">
+    {{ lang === 'zh_CN' ? curWord.nameEn : curWord.name }}
+  </view>
+
+  <view class="options">
+    <radio-group bindchange="radioChange">
+      <view wx:for="{{options}}" wx:key="{{item.nameEn}}" class="radio">
+        <radio value="{{item.nameEn}}" color="#57bc78" checked="{{item.checked}}">
+          {{lang === 'zh_CN' ? item.name : item.nameEn }}
+        </radio>
+      </view>
+    </radio-group>
+  </view>
+
+  <view class="btn-box">
+    <view class="btn" bindtap="checkResult">对答案</view>
+    <view class="btn-change" bindtap="initWord">换一个</view>
+  </view>
+
+  <view class="ad-box">
+    <ad unit-id="adunit-5f8609462bc68236"></ad>
+  </view>
+</view>

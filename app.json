@@ -6,6 +6,7 @@
     "pages/calculate/calculate",
     "pages/flavor-wheel/flavor-wheel",
     "pages/mine/mine",
+    "pages/riddle/riddle",
     "pages/word-detail/word-detail"
   ],
   "window":{
