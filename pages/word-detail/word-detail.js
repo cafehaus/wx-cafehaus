@@ -10,25 +10,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // curId: '',
     // curEng: '',
-    list: []
+    info: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options);
     let curId = options.id || ''
     let list = CateInfo[curId]
-    let pageTitle = Cate.find((m, i) => i.toString() === curId).title
+
+    let subId =  options.subid || ''
+    let info = list[subId] || {}
+    let pageTitle = info.name
     wx.setNavigationBarTitle({
       title: pageTitle
     })
     this.setData({
-      list
+      info
     })
-    this.data.curId = curId
   },
 
   /**
@@ -102,14 +104,6 @@ Page({
         }
       }
     })
-  },
-
-  goto(e) {
-    let { idx } = e.currentTarget.dataset
-    console.log(e);
-    let cateId = this.data.curId
-    wx.navigateTo({
-      url: `/pages/word-detail/word-detail?id=${cateId}&subid=${idx}`
-    })
   }
+
 })

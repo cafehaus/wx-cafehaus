@@ -1,5 +1,5 @@
 // pages/mine/mine.js
-import CateData from '../../utils/cate.js'
+import CateData from '../../utils/mock/cate.js'
 Page({
 
   /**
@@ -72,11 +72,10 @@ Page({
    * 翻译
    */
   goto(e) {
-    console.log(e)
-    let { id } = e.currentTarget.dataset
+    let { cateId } = e.currentTarget.dataset
 
     wx.navigateTo({
-      url: `/pages/cate-list/cate-list?id=${id}`
+      url: `/pages/cate-list/cate-list?id=${cateId}`
     })
   }
 

@@ -1,0 +1,60 @@
+.page {
+  background: #FFF;
+  padding: 0 60rpx;
+}
+
+.action {
+  text-align: center;
+  padding: 40rpx 0 100rpx;
+}
+
+.action .btn {
+  font-size: 30rpx;
+  color: #57bc78;
+}
+
+.question {
+  font-size: 48rpx;
+  font-weight: 500;
+  text-align: center;
+  color: #453e7b;
+}
+
+.options {
+  margin: 60rpx 0 120rpx;
+}
+
+.options .radio {
+  margin: 30rpx 0;
+  font-size: 30rpx;
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-box .btn {
+  border: 2px solid #57bc78;
+  display: inline-block;
+  height: 72rpx;
+  border-radius: 50rpx;
+  padding: 0 80rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #57bc78;
+  line-height: 72rpx;
+}
+
+.btn-box .btn-change {
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+
+.ad-box {
+  margin: 200rpx 30rpx 0;
+  border-radius: 8rpx;
+  overflow: hidden;
+}

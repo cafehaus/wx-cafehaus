@@ -12,6 +12,9 @@ const coffee = [
   { name: '世界咖啡杯测大赛', abbr: 'WCTC', nameEn: 'World Cup Tasters Championship', phonetic: "" },
   { name: '世界爱乐压大赛', abbr: 'WAC', nameEn: 'World Aeropress Championship', phonetic: "" },
   { name: '专业咖啡大师竞技赛', abbr: 'P.C.A', nameEn: 'Professional Coffee Athletics', phonetic: "" },
-]
+].map(m => {
+  m.parentId = '10' // 父级id，直接拿索引做id,，跟文件名相同就行
+  return m
+})
 
 module.exports = coffee

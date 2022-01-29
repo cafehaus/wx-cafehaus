@@ -1,0 +1,20 @@
+<view class="page">
+  <view class="item">
+    <view class="name">{{ info.name }}</view>
+
+    <view class="info">
+      <view class="english">
+        <text	user-select>{{ info.nameEn }}</text>
+        <text class="iconfont icon-read" bindtap="onSpeak" data-txt="{{ info.nameEn }}" />
+      </view>
+      <view wx:if="{{info.phonetic}}" class="phonetic">音标：{{ info.phonetic }}</view>
+      <view wx:if="{{info.alias}}" class="alias">同义词：{{ info.alias }}</view>
+      <view wx:if="{{info.des}}" class="des">描述：{{ info.des }}</view>
+      <view wx:if="{{info.intro}}" class="des">介绍：{{ info.intro }}</view>
+    </view>
+  </view>
+
+  <view class="item item-ad">
+    <ad unit-id="adunit-5f8609462bc68236"></ad>
+  </view>
+</view>

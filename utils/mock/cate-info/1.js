@@ -40,6 +40,9 @@ const coffee = [
   { name: '姜汁咖啡', nameEn: 'Ginger Juice Coffee', phonetic: "[ˈdʒɪndʒər dʒuːs ˈkɔːfi]" },
   { name: '贵妇人咖啡', nameEn: 'Dame Coffee', phonetic: "[deɪm ˈkɔːfi]" },
   { name: '椰香咖啡', nameEn: 'Coconut Coffee', phonetic: "[ˈkoʊkənʌt ˈkɔːfi]" }
-]
+].map(m => {
+  m.parentId = '1' // 父级id，直接拿索引做id,，跟文件名相同就行
+  return m
+})
 
 module.exports = coffee

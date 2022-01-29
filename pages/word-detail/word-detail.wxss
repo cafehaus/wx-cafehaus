@@ -24,15 +24,6 @@
   color: #666;
   border-bottom: 1rpx solid #eee;
   padding: 0 40rpx 20rpx;
-  display: flex;
-  align-items: center;
-  justify-content: space-between
-}
-
-.item .name .icon-arrow-right {
-  font-size: 36rpx;
-  font-weight: normal;
-  color: #ccc;
 }
 
 .item .info {

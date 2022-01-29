@@ -41,12 +41,6 @@
   color: #999;
 }
 
-.item .pic{
-  width: 120rpx;
-  height: 160rpx;
-  border-radius: 8rpx;
-}
-
 .ad-box {
   margin-top: 20rpx;
   border-radius: 8rpx;

@@ -1,14 +1,13 @@
 <view class="page">
   <view class="list-box">
+    <!-- 坑：不能用id这个属性，target 和 currentTarget 上都有默认的id属性，错误示例：data-id="{{ index }}" -->
     <view
       class="item"
       wx:for="{{ list }}"
       wx:key="index"
-      id="{{ item.id }}"
-      data-id="{{ item.id }}"
+      data-cate-id="{{ index }}"
       bindtap="goto" 
     >
-      <!-- <image class="pic" src="{{ item.pic }}" mode="aspectFill" /> -->
       <text class="iconfont icon-{{item.icon}}" />
 
       <view class="info">

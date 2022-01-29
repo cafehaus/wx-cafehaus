@@ -5,7 +5,8 @@
     "pages/translate/translate",
     "pages/calculate/calculate",
     "pages/flavor-wheel/flavor-wheel",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/word-detail/word-detail"
   ],
   "window":{
     "backgroundTextStyle":"light",

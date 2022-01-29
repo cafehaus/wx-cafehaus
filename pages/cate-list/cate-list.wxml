@@ -1,12 +1,15 @@
 <view class="page">
   <block wx:for="{{ list }}" wx:key="index">
     <view class="item">
-      <view class="name">{{ item.name }}</view>
+      <view class="name" data-idx="{{ index }}" bindtap="goto">
+        {{ item.name }}
+        <text class="iconfont icon-arrow-right" />
+      </view>
 
       <view class="info">
-        <view class="english">
+        <view class="english" catchtap="onSpeak">
           <text	user-select>{{ item.nameEn }}</text>
-          <text class="iconfont icon-read" bindtap="onSpeak" data-txt="{{ item.nameEn }}" />
+          <text class="iconfont icon-read" data-txt="{{ item.nameEn }}" />
         </view>
         <view wx:if="{{item.phonetic}}" class="phonetic">音标：{{ item.phonetic }}</view>
         <view wx:if="{{item.alias}}" class="alias">同义词：{{ item.alias }}</view>
